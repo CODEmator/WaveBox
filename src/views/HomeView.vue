@@ -1,5 +1,5 @@
 <script setup>
-import Navigation from '../components/Navigation.vue'
+import Navigation from '../components/NavigationItem.vue'
 import TheWelcome from '../components/TheWelcome.vue'
 </script>
 <!-- <script src="../menu.js"></script> -->
@@ -7,9 +7,7 @@ import TheWelcome from '../components/TheWelcome.vue'
 <template>
   <main>
     <Navigation/>
-    <main>
-      <TheWelcome/>
-    </main>
+    <TheWelcome/>
   </main>
 </template>
 
