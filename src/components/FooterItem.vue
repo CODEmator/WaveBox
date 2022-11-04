@@ -4,6 +4,7 @@ import IconFacebook from './icons/IconFacebook.vue'
 import IconTwitter from './icons/IconTwitter.vue'
 import IconInstagram from './icons/IconInstagram.vue'
 </script>
+
 <template>
     <footer>
       <div class="footerTop">
@@ -27,8 +28,9 @@ import IconInstagram from './icons/IconInstagram.vue'
       </div>
     </footer>
 </template>
+
 <style scoped>
-footer {
+  footer {
     display: flex;
     flex-direction: column;
     /* position: fixed; */
@@ -36,7 +38,7 @@ footer {
     background-color: var(--vt-c-black-soft);
     margin: 1rem 0;
     padding: 1rem;
-    bottom: -11.5vh;
+    bottom: -12vh;
     left: -2rem;
     align-items: center;
     justify-content: space-between;

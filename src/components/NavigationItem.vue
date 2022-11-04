@@ -1,7 +1,22 @@
 <script setup>
 import { RouterLink } from 'vue-router'
-import JoinBtn from '../components/buttons/JoinNow.vue'
-import MenuIcon from '../components/icons/IconMenu.vue';
+import JoinBtn from './buttons/JoinNow.vue'
+import MenuIcon from './icons/IconMenu.vue'
+</script>
+
+<script>
+export  default {
+  data() {
+    return {
+      showMobileMenu: false,
+    };
+  },
+  methods: {
+    showMenu() {
+      this.showMobileMenu = !this.showMobileMenu
+    }
+  }
+}
 </script>
 
 <template>
@@ -27,30 +42,31 @@ import MenuIcon from '../components/icons/IconMenu.vue';
 </template>
 
 <style scoped>
-header {
-  display: flex;
-  line-height: 1.5;
-  justify-content: space-between;
-  align-items: center;
-  /* max-height: 100vh; */
-}
+  header {
+    display: flex;
+    line-height: 1.5;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed; */
+    /* max-height: 100vh; */
+  }
 
-.logowrap {
-  display: flex;
-}
+  .logowrap {
+    display: flex;
+  }
 
-.logotext {
-  font-size: 1.8rem;
-  margin-top: .3rem;
-  margin-left: .2rem;
-}
+  .logotext {
+    font-size: 1.8rem;
+    margin-top: .3rem;
+    margin-left: .2rem;
+  }
 
-.wrapper {
+  .wrapper {
     display: flex;
     flex-direction: column;
-}
+  }
 
-.nav-content {
+  .nav-content {
     position: fixed;
     display: flex;
     z-index: 999;
@@ -61,40 +77,40 @@ header {
     width: 100vw;
     margin-left: 3rem;
     margin-right: auto;
-}
-.open-menu {
+  }
+  .open-menu {
     display: block;
-}
-.close-menu {
+  }
+  .close-menu {
   display: none;
-}
+  }
 
-nav {
+  nav {
     display: flex;
     width: 100%;
     font-size: 1.3rem;
     text-align: center;
     margin-top: 2rem;
     align-items: center;
-}
+  }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
-}
+  nav a.router-link-exact-active {
+    color: var(--color-text);
+  }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
-}
+  nav a.router-link-exact-active:hover {
+    background-color: transparent;
+  }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
-}
+  nav a {
+    display: inline-block;
+    padding: 0 1rem;
+    border-left: 1px solid var(--color-border);
+  }
 
-nav a:first-of-type {
-  border: 0;
-}
+  nav a:first-of-type {
+    border: 0;
+  }
 
 
 @media (min-width: 1024px) {
@@ -149,19 +165,5 @@ nav a:first-of-type {
 }
 </style>
 
-<script >
-export default {
-    data() {
-        return {
-            showMobileMenu: false,
-        };
-    },
-    methods: {
-        showMenu() {
-            this.showMobileMenu = !this.showMobileMenu
-        }
-    }
-}
-</script>
 
 

@@ -13,4 +13,3 @@ import JoinForm from './JoinForm.vue'
     </JoinItem>
 </template>
 
-<style scoped></style>

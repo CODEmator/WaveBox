@@ -140,7 +140,7 @@
     }
 
     .grid {
-        width: 10vw;
+        width: 20%;
     }
 }
 

@@ -8,8 +8,8 @@
             <div class="error"></div>
         </div>
         <div class="input-control">
-            <label for="create_pw">Password</label>
-            <input id="create_pw" name="create_pw" type="password">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
             <i class="fas fa-eye-slash createShow"></i>
             <div class="error"></div>
         </div>
@@ -29,26 +29,27 @@
 form {
     display: block;
     background-color: var(--vt-c-white);
-    padding: .2rem;
+    padding: .5rem;
     border-radius: 1rem;
     margin: .3rem auto;
     width: 80vw;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 label {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 input {
     border: .2rem solid var(--vt-c-white-nude);
     border-radius: 10px;
     display: block;
-    font-size: 1rem;
+    font-size: .8rem;
     padding: .5rem;
     width: 100%;
 }
@@ -59,18 +60,12 @@ input:focus {
 
 input[type=submit] {
     width: 100%;
-    font-size: 24px;
+    font-size: 1rem;
     color: var(--vt-c-white);
     background-color: var(--vt-c-blue);
     /* border: var(--vt-c-white); */
 }
 
-input[type=submit]:hover {
-    letter-spacing: 2px;
-    background-color: var(--vt-c-white);
-    color: var(--vt-c-blue);
-    border-color: var(--vt-c-blue);
-}
 
 .input-control {
     display: flex;
@@ -80,16 +75,12 @@ input[type=submit]:hover {
 i {
     position: absolute;
     display: flex;
-    top: 46%;
-    left: 88%;
-    /* z-index: 1; */
-    background-color: var(--vt-c-white-nude);
-    width: 8vw;
-    height: 4%;
+    margin-top: 11%;
+    margin-left: 92%;
+    color: var(--vt-c-blue);
+    /* background-color: var(--vt-c-white-nude); */
     place-items: center;
     justify-content: center;
-    border: .2rem solid var(--vt-c-white-nude);
-    border-radius: 0 6px 6px 0;
 }
 
 .link {
@@ -98,6 +89,7 @@ i {
     text-align: center;
     padding: .2rem;
     margin-top: .4rem;
+    font-size: .8rem;
 }
 
 a {
@@ -108,5 +100,22 @@ a {
   a:hover {
     color: var(--vt-c-pink);
   }
+
+    input[type=submit]:hover {
+        font-weight: bold;
+        letter-spacing: 2px;
+        background-color: var(--vt-c-white);
+        color: var(--vt-c-blue);
+        border-color: var(--vt-c-blue);
+    }
+}
+@media (min-width: 1024px) {
+    form {
+        width: 100%;
+    }
+
+    i {
+        margin-top: 10%;
+    }
 }
 </style>
